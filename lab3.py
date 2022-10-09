@@ -6,7 +6,7 @@ while True:
         step = int(input('Введите шаг шифровки диапозоном с 1 до 25: '))
         message = input('Введите сообщение на английском языке для шифровки: ').upper()
         result = ''
-        if step > 25:
+        if step > 25: #Если шаг будет превышать 25
             print ('Шаг превысил диапозон. Попробуйте еще раз.')
             break
         for i in message: #Поиск символа в алфавите
@@ -16,7 +16,7 @@ while True:
                 result += alphabet[new_position]
             else:
                 result += i 
-        if message = result:
+        if message = result: #Сравниваем введенный текст пользователя с результатом цикла 
             print ('Вы ввели символ или текст не на английском языке. Попробуйте еще раз.')
         else:
             print ('Ваше зашифрованное сообщение:', result)
